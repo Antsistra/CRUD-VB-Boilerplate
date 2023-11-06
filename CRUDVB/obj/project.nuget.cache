@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "nLHjtxvndGiVFOwjP6ciCWeim1k6xehe9wvHk5C1G95UyI66qVaNfnvc9tkd7NGFfnIhqaFuIO/+xCDwWAapOQ==",
+  "dgSpecHash": "PYkNBlED5njhYtov9jot56Ujj4Et6RVtstSY8CcNibNtIUfSUFB677iLeNMmR+TW/qyZC+wU4ksl9gryatZiWA==",
   "success": true,
   "projectFilePath": "D:\\CRUDVB\\CRUDVB\\CRUDVB.vbproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Hadi\\.nuget\\packages\\system.data.odbc\\7.0.0\\system.data.odbc.7.0.0.nupkg.sha512",
+    "C:\\Users\\Hadi\\.nuget\\packages\\system.text.encoding.codepages\\7.0.0\\system.text.encoding.codepages.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
