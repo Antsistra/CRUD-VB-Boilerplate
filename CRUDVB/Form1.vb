@@ -47,7 +47,23 @@ Public Class Form1
             Call KondisiAwal()
         End If
     End Sub
-
+    Private Sub TextBox1_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox1.KeyPress
+        If e.KeyChar = Chr(13) Then
+            Call Connection()
+            cmd = New OdbcCommand("select * from mahasiswa namatabel nim = '" & TextBox1.Text & "'", Conn)
+            Rd = cmd.ExecuteReader
+            Rd.Read()
+            If Rd.HasRows Then
+                TextBox2.Text = Rd.Item("nama")
+                ComboBox1.Text = Rd.Item("jekel")
+                ComboBox2.Text = Rd.Item("prodi")
+                TextBox3.Text = Rd.Item("alamat")
+                TextBox4.Text = Rd.Item("nohp")
+            Else
+                MsgBox("Data tidak ditemukan")
+            End If
+        End If
+    End Sub
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         End
     End Sub
